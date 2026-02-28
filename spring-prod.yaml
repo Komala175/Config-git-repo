@@ -1,0 +1,6 @@
+spring:
+  mangodb:
+    uri: mongodb://localhost:27017
+    database: ZelleTransactionOrder
+
+
