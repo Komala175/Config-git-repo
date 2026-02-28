@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: transactionorder-api
+logging:
+  level:
+    com:
+      transactionorder: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %logger{36} - %msg%n"
+  file:
+    name: logs/transactionorder.log
+    path: ./logs
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
